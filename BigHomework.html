@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BigHomework</title>	
+	<style type="text/css">
+		body{overflow: hidden;}
+		a{text-decoration: none;}
+		.a{
+			color: gray;
+			font-size: 10px;
+			margin-left: 19px; 
+			float: right; 
+			margin-top: 10px;
+		}
+		.b{
+			border: solid 2px #fe6c00;
+			width: 500px;
+			height: 30px;
+			margin-left: 100px;
+			margin-top: 20px;"
+			float: left;
+		}
+		.c{
+			border-color: #fe6c00;
+			background-color: #fe6c00;
+			width: 81px;
+			height: 36px;
+			line-height: 36px;
+			float: right;
+			margin-right: 33px;
+			margin-top: 20px;
+			color: white;
+			text-align: center;
+
+		}
+		.d{
+			width: 86px;
+			height: 39px;
+			border-color: #e6e5e2;
+			font-size: 9px;
+			border:solid 0.5px;
+			color: #b79691;
+			float: right;
+			margin-top: 20px;
+			text-align: center;
+		}
+		.e{
+			border-color: #ff4d04;
+			background-color: #ff4d04;
+			width: 170px;
+			height: 42px;
+			line-height: 42px;
+			color: white;
+			text-align: center;
+			margin-left: 60px;
+			float: left;
+		}
+		.f{
+			width: 100px;
+			height: 42px;
+			line-height: 42px;
+			text-align: center;
+			float: left;
+		}
+		.g{
+			border:solid 0.5px #fe6c00;
+			width: 145px;
+			height: 423px;
+			background-color: white;
+			float: left;
+			font-size: 13px;
+			text-align: center;
+		}
+		.h{
+			border-color: solid 1px #4c4c4a;
+			width: 25px;
+			height: 423px;
+			background-color: #4c4c4a;
+			color: red;
+			text-align: center;
+			margin-left: 60px;
+			float: left;
+		}
+		ul,li{
+			list-style: none;
+		}
+		.box{
+			width: 800px;
+			height: 360px;
+			border: 1px solid red;
+			position: relative;
+			overflow: hidden;
+			float: left;
+		}
+		.box>span{
+			top: 150px;
+			line-height: 50px;
+			position: absolute;
+		}
+		#left{
+			left: 0px;
+		}
+		#right{
+			right: 0px;
+		}
+		.slider{
+			width: 6400px;
+			position: absolute;
+			left: -800px;
+		}
+		.slide{
+			width: 800px;
+			overflow: hidden;
+			float: left;
+		}
+		.nav{
+			position: absolute;
+			left: 200px;
+			bottom: 20px;
+			text-align: center;
+		}
+		.nav>li{
+			float: left;
+			width: 20px;
+			height: 20px;
+			background: white;
+			cursor: pointer;
+			margin: 0 10px;
+			border-radius: 50%;
+		}
+		.nav .active{
+			background: #fe6c00;
+		}
+
+
+
+
+		.picture img{
+			float:left;
+			width:200px;
+			height:190px;
+		}
+		.right{
+			width:202px;
+			height:548px;
+			float:left;
+			background-color:white;
+		}
+		.announce{
+			width:202px;
+			height:358px;
+			border-bottom:1px solid #ebeae7;
+			color:#ff4d04;
+			font-weight:bold;
+			float:left;
+		}
+		.an01{
+			height:44px;
+			line-height:44px;
+			border-bottom:1px solid #ebeae7;
+			font-size:14px;
+		}
+		.pic1{
+			float: left;
+			margin:10px 10px 0px 18px;
+		}
+		.pic2{
+			float:right;
+			margin:16px 14px 0px 0px;
+		}
+		.recharge{
+			margin:10px 14px 0px 14px;
+			float:left;
+		}
+		.pic3{
+			margin-top:4px;
+		}
+		.span1{
+			font-size:10px;
+		}
+		.span2{
+			font-size:10px;
+			color:#ff4d04;
+		}
+		.span3{
+			font-size:13px;
+			color:#ff4d04;
+		}
+		.recharge input{
+			width:124px;
+			height:22px;
+			margin:6px 0px 6px 0px;
+		}
+		.recharge button{
+			width:174px;
+			height:28px;
+			border-radius:6px;
+			line-height:28px;
+			background-color:#ff4d04;
+		}
+		select{
+			width:60px;
+			height:17px;
+			margin-bottom:8px;
+		}
+		.bottom{
+			height:344px;
+			margin:0 auto;
+			float:left;
+		}
+		.bttop{
+			height:180px;
+			width:1180px;
+			border-bottom:1px solid #ebeae8;
+			float:left;
+		}
+		.bttop>img{
+			float:left;
+		}
+		.liebiao{
+			height:180px;
+			margin:28px 0px 18px 0px;
+			float:left;
+		}
+		.liebiao ul{
+			margin-left:76px;
+			height:128px;
+			display:inline-block;
+			float:left;
+		}
+		.liebiao>ul>li:first-child{
+			font-size:14px;
+		}
+		.liebiao>ul>li{
+			margin-bottom:12px;
+			font-size:10px;
+		}
+		.liebiao a{
+			color:#666560;
+		}
+		.liebiao>ul>li>.black{
+			color:black;
+		}
+		.pic4{
+			margin:22px 0px 0px 34px;
+		}
+		.btbt{
+			height:164px;
+			font-size:10px;
+			color:#666560;
+		}
+		.btbt ul{
+			margin:0px 0px 18px 266px;
+		}
+		.btbt li{
+			display:inline-block;
+			margin-top:14px;
+		}
+		.btbt span{
+			margin:0px 12px 0px 12px;
+		}
+		.btbt p{
+			margin-bottom:10px;
+		}
+		.p1{
+			margin-left:342px;
+		}
+		.p2{
+			margin-left:54px;
+		}
+		.p3{
+			margin-left:526px;
+		}
+		.logo{
+			margin-left:206px;
+		}
+		/*公告栏*/
+		.an02{
+			font-size:10px;
+			height:310px;
+			position:relative;
+			overflow:hidden;
+		}
+		.an02 li{
+			margin:10px 0px 12px 14px;
+		}
+		.an02 ul{
+			overflow:hidden;
+			float:left;
+			height:310px;
+		}
+
+		/*右侧弹出*/
+		#alert{
+			width:180px;
+			position:fixed;
+			left:1250px;
+			top:80px;
+			z-index:2;
+		}
+		.tan1{
+			width:124px;
+			height:102px;
+			margin-left:50px;
+			margin-bottom:4px;
+			cursor:pointer;
+		}
+
+		.consult,.xiaobang{
+			width:124px;
+			float:left;
+		}
+		.tan{
+			width:124px;
+			height:140px;
+			background-color:#ff995d;
+			margin-left:50px;
+			margin-bottom:4px;
+			cursor:pointer;
+		}
+		.tan>img{
+			float:left;
+		}
+		.tan2>div{
+			height:28px;
+			width:40px;
+			line-height:28px;
+			font-size:10px;
+			float:left;
+			margin:44px 0px 0px 0px;
+		}
+		.tan2>img{
+			float:left;
+		}
+		.denglu{
+			color:white;
+			height:20px;
+			line-height:20px;
+			text-align:center;
+			border:1px solid white;
+			margin-top:6px;
+		}
+		.erwei{
+			margin-left:10px;
+			margin-top:40px;
+		}
+
+
+	</style>
+</head>
+<body style="width: 1180px;margin: 0 auto;overflow: auto;">
+	<div style="height: 35px;">
+		<p style="color: gray; margin-left: 60px; float: left; font-size: 10px" > 帮五买，享帮帮 </p>
+		<img style="margin-top: 6px; margin-left: 340px;width:19px;height:19px;background: url(img/common_min.png)0-31px;">
+		<img style="margin-left: 19px;width:19px;height:19px;background: url(img/common_min.png)0-53px;">
+		<img style="margin-left: 19px;width:19px;height:19px;background: url(img/common_min.png)0-75px;">
+		<a href="" style="color: gray; font-size: 9px; margin-left: 18px; float: right; margin-right: 0px; margin-top: 5px;"><img style="margin-right: 3px" src="img/gouwuche.jpg">购物车<span style="color: orange;font-weight: bold;margin-left: 5px;">0</span></a>
+		<a href="" class="a" ">客户服务</a>
+		<a href="" class="a"">帮5淘</a>
+		<a href="" class="a" style="margin-top: 7px;"><img style="margin-right: 3px" src="img/tp-my-phone.png">手机版</a>
+		<a href="" class="a"">帮钻兑换</a>
+		<a href="" class="a">我的收藏</a>
+		<a href="" class="a" style="margin-top: 7px;"><img style="margin-right: 3px" src="img/dingdan.jpg">我的订单</a>
+		<a href="" class="a""><img style="margin-right: 3px" src="img/yx_10.png">消息</a>
+		<a href="" class="a"">注册</a>
+		<a href="" class="a">登录</a>
+	</div>
+	<div style="height: 100px;">
+		<img style="float: left; margin-left:60px" src="img/logo_03.jpg">		
+		<input class="b" type="text" value="输入商品网址或关键词，直通全网，快速帮5购！" name="" >			
+		<div class="d" style="margin-right: 0px;background-color: #ff4d04;color: white;border-color: #ff4d04;font-size: 14px;"><img src="img/wenhao.jpg" style="margin-top: 15px;">常见问题</div>
+		<div class="d"><img src="img/yx_10.png" style="margin: 0 auto;margin-top: 12px;"><br>mc@b5m.com</div>
+		<div class="d"><img src="img/erji_03.png" style="margin: 0 auto;margin-top: 10px;"><br>100-085-0505</div>
+		<div class="c">搜全网</div>
+		<p style="color: red;font-size: 11px;float: left;margin-left: 110px;">洗发护发<img src="img/xian_03.png" style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="color: red;font-size: 11px;float: left;">日本纸尿裤<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="font-size: 11px;float: left;">身体乳<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="font-size: 11px;float: left;">内衣文胸<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="color: gray; font-size: 11px;float: left;">iPhone 6s<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="color: gray; font-size: 11px;float: left;">iPad Air2<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="font-size: 11px;float: left;">牛仔裤<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="font-size: 11px;float: left;">奶粉<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="font-size: 11px;float: left;">防晒霜<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="font-size: 11px;float: left;margin-top: 15px;">伞</p>
+	</div>
+	<div class="e">全部商品分类</div>
+	<div class="f">帮5赚</div>
+	<div class="f">帮韩品</div>
+	<div class="f">超划算</div>
+	<div class="f">品牌货栈</div>
+	<div class="f">韩国馆</div>
+	<div class="f">帮社区</div>
+	<div class="f">1元兑奖<img src="img/hot.gif"></div>
+	<div style="border:1px solid #fe6c00;margin-top: 40px;"></div>
+	<div style="width: 1180px;background-color: #f8f7f6;">
+		<div class="h">&nbsp 当前搜索电商 &nbsp 全网</div>
+		<div class="g">
+			<p>手机 数码 影音 配件</p>
+			<p>电脑 网路 办公 打印</p>
+			<p>家电 厨卫 生活 个户</p>
+			<p>园艺 家具 家访 家饰</p>
+			<p>彩妆 面部 身体 香水</p>
+			<p>男装 女装 内衣 其他</p>
+			<p>女包 男包 女鞋 男鞋</p>
+			<p>运动 户外 装备 服饰</p>
+			<p>儿童 婴儿 视频 玩具</p>
+			<p>乐器 家宠 收藏 鲜花</p>
+			<p>保健 理疗 药品 眼镜</p>
+			<p>果蔬 礼品 粮油 特产</p>
+			<p>文艺 生活 科技 教育</p>
+		</div>
+		<div class="box" id="box">
+		<div class="slider" id="slider">
+			<div class="slide"><img src="img/bann6.png" alt=""></div>
+			<div class="slide"><img src="img/bann1.jpeg" alt=""></div>
+			<div class="slide"><img src="img/bann2.jpeg" alt=""></div>
+			<div class="slide"><img src="img/bann3.jpeg" alt=""></div>
+			<div class="slide"><img src="img/bann4.jpeg" alt=""></div>
+			<div class="slide"><img src="img/bann5.jpeg" alt=""></div>
+			<div class="slide"><img src="img/bann6.png" alt=""></div>
+			<div class="slide"><img src="img/bann1.jpeg" alt=""></div>
+		</div>
+		<span id="left"><img src="img/left.png"></span>
+		<span id="right"><img src="img/right.png"></span>
+		<ul class="nav" id="nav">
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ul>
+	</div>
+	</div>
+
+	<div class="picture">
+		<img src="img/1(1).jpg"/>
+		<img src="img/2.jpg"/>
+		<img src="img/3(1).png"/>
+		<a href=""><img src="img/qqq.png"/></a>
+		</div>
+		</div>
+		<div class="right">
+			<div class="announce">
+				<div class="an01">
+					<img src="img/ico-notice.png" class="pic1"/>
+					<span>帮帮快讯</span>
+					<img src="img/jiantou.jpg" class="pic2"/>
+				</div>
+			<div class="an02">
+				<ul class="ul">
+					<li>[公告]帮购及VIP服务调整1</li>
+					<li>[公告]帮购及VIP服务调整2</li>
+					<li>[公告]帮购及VIP服务调整3</li>
+					<li>[公告]帮购及VIP服务调整4</li>
+					<li>[公告]帮购及VIP服务调整5</li>
+					<li>[公告]帮购及VIP服务调整6</li>
+					<li>[公告]帮购及VIP服务调整7</li>
+					<li>[公告]帮购及VIP服务调整8</li>
+					<li>[公告]帮购及VIP服务调整9</li>
+					<li>[公告]帮购及VIP服务调整10</li>
+					<li>[公告]帮购及VIP服务调整11</li>
+					<li>[公告]帮购及VIP服务调整12</li>
+					<li>[公告]帮购及VIP服务调整13</li>
+				</ul>
+				<ul class="ul"></ul>
+			</div>
+		</div>
+		<div>
+			<div class="recharge">
+				<div>
+					<img src="img/phone.png" class="pic3"/>
+					<span class="span1">&nbsp;话费充值</span>
+					<span class="span2">&nbsp;(可使用超级帮钻)</span>
+				</div>
+				<div>
+					<input type="text" placeholder="请输入手机号" />
+					<select id="select">
+						<option>10</option>
+						<option>30</option>
+						<option>50</option>
+						<option>100</option>
+					</select>
+					<span class="span3">¥</span><span class="span3">10</span>
+					<button>充值</button>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="bttop">
+			<img src="img/loginB.jpg"/>
+			<div class="liebiao">
+				<ul>
+					<li><a href="" class="black">购物指南</a></li>
+					<li><a href="">如何下单</a></li>
+					<li><a href="">帮5购流程</a></li>
+					<li><a href="">订单查询</a></li>
+					<li><a href="">物流配送</a></li>
+				</ul>
+				<ul>
+					<li><a href="" class="black">支付相关</a></li>
+					<li><a href="">支付方式</a></li>
+					<li><a href="">安全设置</a></li>
+					<li><a href="">账户信息</a></li>
+				</ul>
+				<ul>
+					<li><a href="" class="black">售后服务</a></li>
+					<li><a href="">取消订单</a></li>
+					<li><a href="">申请售后</a></li>
+					<li><a href="">退货流程</a></li>
+					<li><a href="">退货相关</a></li>
+				</ul>
+				<ul>
+					<li><a href="" class="black">VIP服务</a></li>
+					<li><a href="">VIP优惠</a></li>
+					<li><a href="">如何成为VIP</a></li>
+					<li><a href="">超级帮钻</a></li>
+				</ul>
+				<ul>
+					<li><a href="" class="black">帮韩品</a></li>
+					<li><a href="">韩国正品</a></li>
+					<li><a href="">闪电发货</a></li>
+					<li><a href="">帮韩品售后</a></li>
+				</ul>
+				<ul>
+					<li><a href="" class="black">更多</a></li>
+					<li><a href="">手机APP</a></li>
+					<li><a href="">帮5买采APP</a></li>
+					<li><a href="">帮5淘插件</a></li>
+					<li><a href="">其他</a></li>
+				</ul>
+			</div>
+			<img src="img/erweima.jpg" class="pic4"/>
+				</div>
+					<div class="btbt">
+						<ul>
+							<li>关于帮5买</li><span> | </span>
+							<li>联系我们</li><span> | </span>
+							<li>合作商家</li><span> | </span>
+							<li>友情链接</li><span> | </span>
+							<li>加入我们</li><span> | </span>
+							<li>移动应用</li><span> | </span>
+							<li>热门</li><span> | </span>
+							<li>广告联盟</li><span> | </span>
+							<li>使用条款</li>
+						</ul>
+						<div>
+							<p class="p1">Copyright © 2011-2015 B5M.COM.All rights reversed.Powered by B5Msoft Co.Ltd.</p>
+							<p class="p2">增值电信业务经营许可证：沪B2-20130065号 | 中华人民共和国互联网药品信息服务资格证书（沪）-非经营性-2013-0034沪卫（中医）网申【2015】10032号 沪ICP备11034776号-3 | 食品流通许可证：</p>
+							<p class="p3">SP3101151410301755</p>
+						</div>
+						<div class="logo">
+							<img src="img/bo1.gif"/>
+							<img src="img/bo2.png"/>
+							<img src="img/bo3.gif"/>
+							<img src="img/bo4.png"/>
+							<img src="img/bo5.png"/>
+							<img src="img/bo6.png"/>
+							<img src="img/bo7.png."/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<div id="alert">
+		<div class="tan1 idtan">
+			<img src="img/consult-s.png" class="consult"/>
+			<img src="img/xiaobang.png" class="xiaobang"/>
+		</div>
+		<div class="tan tan2 idtan">
+			<img src="img/youhui.png"/>
+			<div>
+				<span>未登录</span>
+				<div class="denglu">登录</div>
+			</div>
+		</div>
+		<div class="tan idtan">
+			<img src="img/app.png"/>
+			<img src="img/serwei.png" class="erwei"/>
+		</div>
+		<div class="tan idtan">
+			<img src="img/cart.png"/>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var slider = document.getElementById('slider');
+		var box = document.getElementById('box');
+		var oNavlist = document.getElementById('nav').children;
+		var index = 1;	
+		function next(){
+			index++;
+			animate(slider,{left:-800*index},function(){
+				if(index == 7){
+					slider.style.left='-800px';
+					index = 1;
+				}
+			})
+			navChange();
+		}
+		var timer = setInterval(next,3000);
+		//鼠标划上时，停止轮播，左右箭头淡出
+		box.onmouseover = function(){
+			clearInterval(timer);
+			animate(left,{opacity:50});
+			animate(right,{opacity:50});
+		}
+		box.onmouseout = function(){
+			timer = setInterval(next,3000);
+			animate(left,{opacity:0});
+			animate(right,{opacity:0});
+		}
+		//点击右箭头
+		right.onclick = next;
+		//点击左箭头
+		left.onclick = function prev(){
+			index--;
+			animate(slider,{left:-800*index},function(){
+				if(index == 0){
+					slider.style.left='-800px';
+					index = 7;
+				}
+			})
+			navChange();
+		}
+		//点击小按钮，让slider返回到指定的位置
+		for(var i = 0;i<oNavlist.length;i++){
+			oNavlist[i].idx = i;
+			oNavlist[i].onclick = function(){
+				index = this.idx+1;
+				animate(slider,{left:-800*index});
+				navChange();
+			}
+		}
+		function navChange(){
+			for(var i = 0;i<oNavlist.length;i++){
+				oNavlist[i].className='';
+			}
+			if (index==7) {
+				oNavlist[0].className = 'active';
+			}else{
+				oNavlist[index-1].className = 'active';
+			}		
+		}
+		function animate(obj,json,callback){
+		clearInterval(obj.timer);
+		obj.timer=setInterval(
+			function(){
+				var isStop=true;
+				for(var attr in json){
+					if(attr=='opacity'){
+						var now=parseInt(getStyle(obj,attr)*100);
+					}else{
+						var now=parseInt(getStyle(obj,attr));
+					}
+					var speed=(json[attr]-now)/5;
+						speed=speed>0?Math.ceil(speed):Math.floor(speed);
+						if(attr=='opacity'){
+							obj.style[attr]=(now+speed)/100;
+						}else{
+							obj.style[attr]=now+speed+'px';
+						}
+					var current=now+speed;
+					if(json[attr]!==current){
+						isStop=false;
+					}
+				}
+				if(isStop){
+					clearInterval(obj.timer);
+					callback&&callback();
+				}
+		},50)
+	}
+	function getStyle(obj,style){
+    	if(getComputedStyle(obj))
+    	return getComputedStyle(obj)[style]
+    	else
+    		obj.currentStyle[style]
+    }	
+	</script>
+
+	
+</body>
+</html>
