@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BigHomework</title>	
+	<style type="text/css">
+		body{overflow: hidden;}
+		a{text-decoration: none;}
+		img{margin: 0;padding: 0}
+		.a{
+			color: gray;
+			font-size: 10px;
+			margin-left: 19px; 
+			float: right; 
+			margin-top: 10px;
+		}
+		.b{
+			border: solid 2px #fe6c00;
+			width: 500px;
+			height: 30px;
+			margin-left: 100px;
+			margin-top: 20px;"
+			float: left;
+		}
+		.c{
+			border-color: #fe6c00;
+			background-color: #fe6c00;
+			width: 81px;
+			height: 36px;
+			line-height: 36px;
+			float: right;
+			margin-right: 33px;
+			margin-top: 20px;
+			color: white;
+			text-align: center;
+
+		}
+		.d{
+			width: 86px;
+			height: 39px;
+			border-color: #e6e5e2;
+			font-size: 9px;
+			border:solid 0.5px;
+			color: #b79691;
+			float: right;
+			margin-top: 20px;
+			text-align: center;
+		}
+		.e{
+			border-color: #ff4d04;
+			background-color: #ff4d04;
+			width: 170px;
+			height: 42px;
+			line-height: 42px;
+			color: white;
+			text-align: center;
+			margin-left: 60px;
+			float: left;
+		}
+		.f{
+			width: 100px;
+			height: 42px;
+			line-height: 42px;
+			text-align: center;
+			float: left;
+		}
+		.g{
+			border:solid 0.5px #fe6c00;
+			width: 145px;
+			height: 423px;
+			background-color: white;
+			float: left;
+			font-size: 13px;
+			text-align: center;
+		}
+		.h{
+			border-color: solid 1px #4c4c4a;
+			width: 25px;
+			height: 423px;
+			background-color: #4c4c4a;
+			color: red;
+			text-align: center;
+			margin-left: 60px;
+			float: left;
+		}
+		.bottom{
+			height:344px;
+			margin:0 auto;
+			float:left;
+		}
+		.bt{
+			height:180px;
+			width:1180px;
+			border-bottom:1px solid #ebeae8;
+			float:left;
+		}
+		.liebiao{
+			height:180px;
+			margin-top: 28px;
+			margin-bottom: 18px;
+			float:left;
+		}
+		.liebiao ul{
+			margin-left:30px;
+			height:128px;
+			display:inline-block;
+			float:left;
+		}
+		.liebiao>ul>li:first-child{
+			font-size:14px;
+		}
+		.liebiao>ul>li{
+			margin-bottom:12px;
+			font-size:10px;
+		}
+		.liebiao a{
+			color:#666560;
+		}
+		.l{
+			margin-top: 22px;
+			margin-bottom: 34px;
+		}
+		.z{
+			height:164px;
+			font-size:10px;
+			color:#666560;
+		}
+		.z ul{
+			margin:0px 0px 18px 266px;
+		}
+		.z li{
+			display:inline-block;
+			margin-top:14px;
+		}
+		.z span{
+			margin:0px 12px 0px 12px;
+		}
+		.z p{
+			margin-bottom:10px;
+		}
+		.p1{
+			margin-left:342px;
+		}
+		.p2{
+			margin-left:150px;
+		}
+		.p3{
+			margin-left:526px;
+		}
+		.logo{
+			margin-left:206px;
+		}
+		.black{
+			width: 100%;
+			height: 40px;
+			margin: 0 auto;
+			background-color: black;
+			position: relative;
+		}
+		.bcon{
+			width: 1180px;
+			height: 40px;
+			margin: 0 auto;
+		}
+		.bcon3{
+			width: 94px;
+			height: 40px;
+			font-size: 12px;
+			line-height: 40px;
+			margin-left: 32px;
+			text-align: center;
+			float: left;
+		}
+		div.bcon ul li a{
+			color: #f0ffff;
+		}
+		.bcon1{
+			background-color: #fe0d4a;
+			width: 94px;
+			height: 40px;
+			font-size: 12px;
+			line-height: 40px;
+			text-align: center;
+			float: left;
+		}
+		.bocn2{
+			position: absolute;
+			top: 0px;
+			left: 950px;
+		}
+		div.zhong{
+			width: 100%;
+			height: 790px;
+			background-color: #f6f5f4;
+		}
+		.zhongi{
+			padding-left: 0px;
+		}
+		div.zhongcon{
+			width: 994px;
+			height: 610px;
+			background-color: white;
+			padding-top: 20px;
+			position: relative;
+		}
+		.zhongc1{
+			width: 408px;
+			height: 408px;
+			border: 1px solid #d0cdc7;
+			margin-left: 40px;
+			position: absolute;
+		}
+		div.zhongcon2{
+			position: absolute;
+			top: 0;
+			left: 1000px;
+		}
+		div.zhongcon3{
+			position: absolute;
+			top: 880px;
+			width: 1180px;
+			margin: 0 auto;
+		}
+		.zhongc3{
+			position: absolute;
+			top: 90px;
+			left: 430px;
+		}
+		.huazhuang{
+			position: absolute;
+			top: 240px;
+			left: 470px;
+			font-size: 12px;
+		}
+		#s150{
+			width: 50px;
+			height: 25px;
+			position: absolute;
+			top: 240px;
+			left: 570px;
+			font-size: 12px;
+			text-align: center;
+			line-height: 25px;
+		}
+		#s200{
+			width: 50px;
+			height: 25px;
+			position: absolute;
+			top: 240px;
+			left: 640px;
+			font-size: 12px;
+			text-align: center;
+			line-height: 25px;
+		}
+		.s15{
+			border: 1px #fe0d4a solid;
+			background:url(img/duigou.png) no-repeat right bottom;
+		}
+		.shuliang{
+			position: absolute;
+			top: 300px;
+			left: 470px;
+			font-size: 12px;
+		}
+		.xiaol{
+			position: absolute;
+			top: 330px;
+			left: 422px;
+		}
+		#nin{
+			position: absolute;
+			top: 370px;
+			left: 554px;
+			font-size: 12px;
+		}
+		#ml{
+			color: #ff9003;
+			font-size: 16px;
+			position: absolute;
+			top: 368px;
+			left: 624px;
+		}
+		.jian{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 300px;
+			left: 530px;
+			border: 1px #aca7a2 solid;
+			text-align: center;
+			line-height: 20px;
+		}
+		.liu{
+			width: 40px;
+			height: 20px;
+			position: absolute;
+			top: 300px;
+			left: 550px;
+			border: 1px #aca7a2 solid;
+			text-align: center;
+			line-height: 20px;
+		}
+		.jia{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 300px;
+			left: 590px;
+			border: 1px #aca7a2 solid;
+			text-align: center;
+			line-height: 20px;
+		}
+		.liu1{
+			position: absolute;
+			top: 303px;
+			left: 640px;
+			font-size: 12px;
+		}
+		div.bottom{
+			width:100%;
+			height: 375px;
+			background-color: #f8f7f6;
+		}
+		div.botcon{
+			width: 1180px;
+			height: 345px;
+			margin: 0 auto;
+		}
+		div.botn{
+			width: 680px;
+			height: 22px;
+			margin: 0 auto;
+		}
+		.con9{
+			float: left;
+		}
+		div.botn ul li{
+			width: 70px;
+			height: 21px;
+			text-align: center;
+		}
+		div.botn ul li a{
+			font-size: 12px;
+			color: #666560;
+		}
+		.zhongc2{
+			position: absolute;
+			top:0;
+			left: 430px;
+		}
+		div.zhongm{
+			margin: 0 auto;
+			width: 1180px;
+			height: 671px;
+
+		}
+		#zhongc3{
+			position: absolute;
+			top: 110px;
+			left:470px;
+		}
+		.zhongc4{
+			position: absolute;
+			left: 450px;
+			top: 140px;
+		}
+		#c5{
+			width: 150px;
+			height: 36px;
+			border: 1px solid #ff5554;
+			font-size: 14px;
+			color: #ff5554;
+			position: absolute;
+			left: 470px;
+			top: 400px;
+			background-color: white;
+			font-weight: bold;
+			border-radius:5px;
+		}
+		#c6{
+			width: 150px;
+			height: 36px;
+			border: 1px solid #ff5554;
+			font-size: 14px;
+			color: white;
+			position: absolute;
+			left: 650px;
+			top: 400px;
+			background-color: #ff0754;
+			font-weight: bold;
+			border-radius:5px;
+		}
+		#yincang{
+			width: 100%;
+			height: 1330px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0.5);
+			display: none;
+		}
+		#kuang{
+			position: absolute;
+			top: 250px;
+			left: 450px;
+			width:399px;
+			height: 200px;
+			background-color: white;
+			display: none;
+		}
+		#gou{
+			position: absolute;
+			top: 25px;
+			left: 0;
+			display: none;
+		}
+		#gou1{
+			width: 150px;
+			height: 36px;
+			border: 1px solid #ff5554;
+			font-size: 14px;
+			color: #ff5554;
+			position: absolute;
+			left: 15px;
+			top: 130px;
+			background-color: white;
+			font-weight: bold;
+			border-radius:5px;
+			display: none;
+			display: none;
+		}
+		#gou2{
+			width: 150px;
+			height: 36px;
+			border: 1px solid #ff5554;
+			font-size: 14px;
+			color: white;
+			position: absolute;
+			left: 225px;
+			top: 130px;
+			background-color: #ff0754;
+			font-weight: bold;
+			border-radius:5px;
+			display: none;
+		}
+		#cha{
+			position: absolute;
+			top: 3px;
+			left: 380px;
+			display: none;
+		}
+		#fang1{
+			position: absolute;
+			top: 490px;
+			left: 20px;
+		}
+		#fang2{
+			position: absolute;
+			top: 490px;
+			left: 240px;
+		}
+		.fang3{
+			width: 60px;
+			height: 60px;
+			border: 1px  #ff9003 solid;
+		}
+		#fang4{
+			position: absolute;
+			top: 490px;
+			left: 70px;
+		}
+		#fang5{
+			position: absolute;
+			top: 495px;
+			left: 160px;
+		}
+		#fang7{
+			position: absolute;
+			width: 408px;
+			height: 408px;
+		}
+		#slider{
+			width:150px;
+			height:150px;
+			position:absolute;
+			left:0px;
+			top:0px;
+			background:#CCC;
+			opacity:0.4;
+			cursor: move;
+			display:none; 
+			filter:alpha(opacity=40);
+			}
+		#img2{
+			width: 408px;
+			height: 408px;
+			position: absolute;
+			border: 1px solid #d0cdc7;
+			left: 428px;
+			top: 20px;
+			z-index: 2;
+			overflow: hidden;
+			display: none;
+		}
+		#Bimg{
+			width: 800px;
+			height: 800px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body style="overflow: auto;">
+	<div style="width: 1180px;margin: 0 auto;">
+		<div class="lu">
+			<div style="height: 35px;">
+		<p style="color: gray; margin-left: 60px; float: left; font-size: 10px" > 帮五买，享帮帮 </p>
+		<img style="margin-top: 6px; margin-left: 340px;width:19px;height:19px;background: url(img/common_min.png)0-31px;">
+		<img style="margin-left: 19px;width:19px;height:19px;background: url(img/common_min.png)0-53px;">
+		<img style="margin-left: 19px;width:19px;height:19px;background: url(img/common_min.png)0-75px;">
+		<a href="" style="color: gray; font-size: 9px; margin-left: 18px; float: right; margin-right: 0px; margin-top: 5px;"><img style="margin-right: 3px" src="img/gouwuche.jpg">购物车<span style="color: orange;font-weight: bold;margin-left: 5px;">0</span></a>
+		<a href="" class="a" ">客户服务</a>
+		<a href="" class="a"">帮5淘</a>
+		<a href="" class="a" style="margin-top: 7px;"><img style="margin-right: 3px" src="img/tp-my-phone.png">手机版</a>
+		<a href="" class="a"">帮钻兑换</a>
+		<a href="" class="a">我的收藏</a>
+		<a href="" class="a" style="margin-top: 7px;"><img style="margin-right: 3px" src="img/dingdan.jpg">我的订单</a>
+		<a href="" class="a""><img style="margin-right: 3px" src="img/yx_10.png">消息</a>
+		<a href="" class="a"">注册</a>
+		<a href="" class="a">登录</a>
+	</div>
+	<div style="height: 100px;">
+		<img style="float: left; margin-left:60px" src="img/logo_03.jpg">		
+		<input class="b" type="text" value="输入商品网址或关键词，直通全网，快速帮5购！" name="" >			
+		<div class="d" style="margin-right: 0px;background-color: #ff4d04;color: white;border-color: #ff4d04;font-size: 14px;"><img src="img/wenhao.jpg" style="margin-top: 15px;">常见问题</div>
+		<div class="d"><img src="img/yx_10.png" style="margin: 0 auto;margin-top: 12px;"><br>mc@b5m.com</div>
+		<div class="d"><img src="img/erji_03.png" style="margin: 0 auto;margin-top: 10px;"><br>100-085-0505</div>
+		<div class="c">搜全网</div>
+		<p style="color: red;font-size: 11px;float: left;margin-left: 110px;">洗发护发<img src="img/xian_03.png" style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="color: red;font-size: 11px;float: left;">日本纸尿裤<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="font-size: 11px;float: left;">身体乳<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="font-size: 11px;float: left;">内衣文胸<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="color: gray; font-size: 11px;float: left;">iPhone 6s<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="color: gray; font-size: 11px;float: left;">iPad Air2<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="font-size: 11px;float: left;">牛仔裤<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="font-size: 11px;float: left;">奶粉<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="font-size: 11px;float: left;">防晒霜<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
+		<p style="font-size: 11px;float: left;margin-top: 15px;">伞</p>
+	</div>
+	</div>
+	<div class="black">
+		<div class="bcon">
+			<ul>
+				<li class="bcon1"><a href="">首页</a></li>
+				<li class="bcon3"><a href="">热门品牌</a></li>
+				<li class="bcon3"><a href="">美妆个护</a></li>
+				<li class="bcon3"><a href="">服饰鞋包</a></li>
+				<li class="bcon3"><a href="">母婴生活</a></li>
+				<li class="bcon3"><a href="">食品保健</a></li>
+				<li class="bcon3"><a href="">韩国直邮</a></li>
+				<li class="bcon3"><a href="">跨境购</a></li>
+			</ul>
+		</div>
+		<img class="bocn2" src="img/ff_03.jpg" alt="">
+	</div>
+	<div class="zhong">
+		<div class="zhongm">
+			<img class="zhongi" src="img/shou2.png" alt="">
+			<div class="zhongcon" id="zhongcon">
+				<div class="zhongc1" id="fang7">
+					<img id="fang6" src="img/pp0.jpeg" alt="">
+					<div id="slider"></div>
+				</div>
+				<div id="img2" style="margin-left: 20px;z-index: 9999;">
+        			<img src="img/pp0.jpeg"  id="Bimg"/>
+    			</div>
+				<div id="fang">
+					<img id="fang1" src="img/spanl.jpg" alt=""> 
+					<img id="fang2" src="img/spanr.jpg" alt="">
+					<img class="fang3" id="fang4" src="img/sp0.jpeg" alt="">
+					<img id="fang5" src="img/sp1.jpeg" alt="">
+				</div>
+				<div class="zhongc2"><img src="img/penw.png" alt=""></div>
+				<img class=" zhongc3" src="img/shou3.png" alt="">
+				<img class="zhongc4" src="img/ss_09.jpg" alt="">
+				<span class="huazhuang">化妆品净含量</span>
+				<span id="s150" class="s150"> 150ml</span>
+				<span id="s200" class="s150">200ml</span>
+				<span class="shuliang">数量</span>
+				<span class="jian" id="jian" style="cursor:pointer;">-</span>
+				<input type="text" class="liu" id="liu" value="1">
+				<span class="jia" id="jia" style="cursor:pointer;">+</span>
+				<img class="xiaol" src="img/shou4.png" alt="">
+				<span class="liu1">件（库存5件）</span>
+				<span id="nin">您已选择</span>
+				<span id="ml">"150ml"</span>
+				<input id="c5" type="button" value="立即购买">
+				<input id="c6" type="button" value="加入购物车">
+				<div class="zhongcon2">
+					<img src="img/ww_07.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="zhongcon3">
+		<img src="img/a_07.jpg" alt="">
+	</div>
+	<div class="bottom">
+		<div class="bt">
+		<img style="float: left;margin-left: 65px;" src="img/loginB.jpg"/>
+		<div class="liebiao">
+			<ul>
+				<li><a href="" >购物指南</a></li>
+				<li><a href="">如何下单</a></li>
+				<li><a href="">帮5购流程</a></li>
+				<li><a href="">订单查询</a></li>
+				<li><a href="">物流配送</a></li>
+			</ul>
+			<ul>
+				<li><a href="" >支付相关</a></li>
+				<li><a href="">支付方式</a></li>
+				<li><a href="">安全设置</a></li>
+				<li><a href="">账户信息</a></li>
+			</ul>
+			<ul>
+				<li><a href="" >售后服务</a></li>
+				<li><a href="">取消订单</a></li>
+				<li><a href="">申请售后</a></li>
+				<li><a href="">退货流程</a></li>
+				<li><a href="">退货相关</a></li>
+			</ul>
+			<ul>
+				<li><a href="" >VIP服务</a></li>
+				<li><a href="">VIP优惠</a></li>
+				<li><a href="">如何成为VIP</a></li>
+				<li><a href="">超级帮钻</a></li>
+			</ul>
+			<ul>
+				<li><a href="" >帮韩品</a></li>
+				<li><a href="">韩国正品</a></li>
+				<li><a href="">闪电发货</a></li>
+				<li><a href="">帮韩品售后</a></li>
+			</ul>
+			<ul>
+				<li><a href="" >更多</a></li>
+				<li><a href="">手机APP</a></li>
+				<li><a href="">帮5买采APP</a></li>
+				<li><a href="">帮5淘插件</a></li>
+				<li><a href="">其他</a></li>
+			</ul>
+		</div>
+		<img style="float: right;" src="img/erweima.jpg" class="l"/>
+			</div>
+				<div class="z">
+					<ul>
+						<li>关于帮5买</li><span> | </span>
+						<li>联系我们</li><span> | </span>
+						<li>合作商家</li><span> | </span>
+						<li>友情链接</li><span> | </span>
+						<li>加入我们</li><span> | </span>
+						<li>移动应用</li><span> | </span>
+						<li>热门</li><span> | </span>
+						<li>广告联盟</li><span> | </span>
+						<li>使用条款</li>
+					</ul>
+					<div>
+						<p class="p1">Copyright © 2011-2015 B5M.COM.All rights reversed.Powered by B5Msoft Co.Ltd.</p>
+						<p class="p2">增值电信业务经营许可证：沪B2-20130065号 | 中华人民共和国互联网药品信息服务资格证书（沪）-非经营性-2013-0034沪卫（中医）网申【2015】10032号 沪ICP备11034776号-3 | 食品流通许可证：</p>
+						<p class="p3">SP3101151410301755</p>
+					</div>
+					<div class="logo">
+						<img src="img/bo1.gif"/>
+						<img src="img/bo2.png"/>
+						<img src="img/bo3.gif"/>
+						<img src="img/bo4.png"/>
+						<img src="img/bo5.png"/>
+						<img src="img/bo6.png"/>
+						<img src="img/bo7.png."/>
+					</div>
+				</div>
+			</div>
+			<div id="yincang">
+		<div id="kuang">
+			<span id="cha">X</span>
+			<img id="gou" src="img/rr11_02.jpg" alt="">
+			<input id="gou1" type="button" value="继续购物">
+			<input id="gou2" type="button" value="去购物车结算">
+		</div>
+	</div>
+</div>	
+	<script type="text/javascript">
+		var fang1=document.getElementById("fang1");
+		var fang2=document.getElementById("fang2");
+		var fang4=document.getElementById("fang4");
+		var fang5=document.getElementById("fang5");
+		var fang7=document.getElementById("fang7");
+		var fang6=document.getElementById("fang6");
+		var zhongcon = document.getElementById("zhongcon")
+		var img2 = document.getElementById("img2");
+		var slider = document.getElementById("slider");
+		var Bimg = document.getElementById("Bimg");
+		fang1.onclick=function(){
+		    fang6.src="img/pp0.jpeg";
+			fang5.removeAttribute("class");
+			fang4.setAttribute("class","fang3")
+		}
+		fang2.onclick=function(){
+			fang5.setAttribute("class","fang3")
+			fang4.removeAttribute("class");
+			fang6.src="img/pp1.jpeg";
+			Bimg.src="img/pp1.jpeg"
+		}
+		fang4.onclick=function (){
+			fang6.src="img/pp0.jpeg";
+			fang5.removeAttribute("class");
+			fang4.setAttribute("class","fang3")
+		}
+		fang5.onclick=function(){
+			fang5.setAttribute("class","fang3")
+			fang4.removeAttribute("class");
+			fang6.src="img/pp1.jpeg";
+			Bimg.src="img/pp1.jpeg"
+		}
+		fang6.onmouseover=function(){
+			slider.style.display='block';
+			img2.style.display='block';
+		}
+		fang6.onmouseout=function(){
+			slider.style.display='none';
+			img2.style.display='none';
+		}
+		fang6.onmousemove=function(ev){
+			var ev=ev||event;
+			var oL=ev.clientX-zhongcon.offsetLeft-slider.offsetWidth/2;
+			var oT=ev.clientY-zhongcon.offsetTop-slider.offsetHeight/2;
+		  
+			var oMaxw=fang6.offsetWidth-slider.offsetWidth;
+			var oMaxh=fang6.offsetHeight-slider.offsetHeight;
+			oL=oL>oMaxw?oMaxw:oL<0?0:oL;
+			oT=oT>oMaxh?oMaxh:oT<0?0:oT;
+			slider.style.left = oL+'px';
+			slider.style.top = oT+'px' ;		
+			var scale = Bimg.offsetHeight/fang6.offsetHeight;
+ 			Bimg.style.left = -oL*scale+'px';
+ 			Bimg.style.top = -oT*scale+'px';
+		}
+		var s150=document.getElementById("s150");
+		var s200=document.getElementById("s200");
+		var ml=document.getElementById("ml");
+		s150.onclick=function(){
+			this.setAttribute("class","s15");
+			s200.removeAttribute("class");
+			ml.innerHTML="'150ml'";
+		}
+		s200.onclick=function(){
+			this.setAttribute("class","s15");
+			s150.removeAttribute("class");
+			ml.innerHTML="'200ml'";
+		}
+		var jian=document.getElementById("jian");
+		var jia=document.getElementById("jia");
+		var liu=document.getElementById("liu");
+		var num=1;
+		jian.onclick=function(){
+			num--;
+			if (num<1) {
+				num=1;
+				jian.style.cursor="not-allowed";
+			}else{
+				jian.style.cursor="pointer";
+			}
+			liu.value=num;
+		}
+		jian.onmousemove=function(){
+			jian.style.cursor="pointer";
+		}
+		jia.onclick=function(){
+			num++;
+			jia.style.cursor="pointer";
+			if (num>=5) {
+				num=5;
+				jia.style.cursor="not-allowed";
+			}else{
+				jia.style.cursor="pointer";
+			}
+			liu.value=num;
+		}
+		jia.onmousemove=function(){
+			jia.style.cursor="pointer";
+		}
+		var yincang=document.getElementById("yincang");
+		var kuang=document.getElementById("kuang");
+		var cha=document.getElementById("cha");
+		var gou=document.getElementById("gou");
+		var gou1=document.getElementById("gou1");
+		var gouwuche=document.getElementById("c6");
+		gouwuche.onclick=function(){
+			yincang.style.display="inline";
+			kuang.style.display="inline";
+			cha.style.display="inline";
+			gou.style.display="inline";
+			gou1.style.display="inline";
+			gou2.style.display="inline";
+		}
+		cha.onclick=function(){
+			yincang.style.display="none";
+			kuang.style.display="none";
+			cha.style.display="none";
+			gou.style.display="none";
+			gou1.style.display="none";
+			gou2.style.display="none";
+		}
+		gou1.onclick=function(){
+			yincang.style.display="none";
+			kuang.style.display="none";
+			cha.style.display="none";
+			gou.style.display="none";
+			gou1.style.display="none";
+			gou2.style.display="none";
+		}
+
+
+
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+    
+
+	

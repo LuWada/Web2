@@ -132,30 +132,24 @@
 		.nav .active{
 			background: #fe6c00;
 		}
-
-
-
-
-		.picture img{
-			float:left;
-			width:200px;
-			height:190px;
+		.ph{
+			float:right;
 		}
 		.right{
-			width:202px;
+			width:145px;
 			height:548px;
 			float:left;
 			background-color:white;
 		}
 		.announce{
-			width:202px;
+			width:145px;
 			height:358px;
 			border-bottom:1px solid #ebeae7;
 			color:#ff4d04;
 			font-weight:bold;
 			float:left;
 		}
-		.an01{
+		.an{
 			height:44px;
 			line-height:44px;
 			border-bottom:1px solid #ebeae7;
@@ -167,11 +161,12 @@
 		}
 		.pic2{
 			float:right;
-			margin:16px 14px 0px 0px;
+			margin-top: 16px;
+			margin-right: 14px;
 		}
 		.recharge{
-			margin:10px 14px 0px 14px;
 			float:left;
+			margin-left: 10px; 
 		}
 		.pic3{
 			margin-top:4px;
@@ -190,7 +185,8 @@
 		.recharge input{
 			width:124px;
 			height:22px;
-			margin:6px 0px 6px 0px;
+			margin-top: 6px;
+			margin-bottom: 6px;
 		}
 		.recharge button{
 			width:174px;
@@ -205,26 +201,23 @@
 			margin-bottom:8px;
 		}
 		.bottom{
-			height:344px;
 			margin:0 auto;
 			float:left;
 		}
-		.bttop{
+		.bt{
 			height:180px;
 			width:1180px;
 			border-bottom:1px solid #ebeae8;
 			float:left;
 		}
-		.bttop>img{
-			float:left;
-		}
 		.liebiao{
 			height:180px;
-			margin:28px 0px 18px 0px;
+			margin-top: 28px;
+			margin-bottom: 18px;
 			float:left;
 		}
 		.liebiao ul{
-			margin-left:76px;
+			margin-left:30px;
 			height:128px;
 			display:inline-block;
 			float:left;
@@ -239,35 +232,33 @@
 		.liebiao a{
 			color:#666560;
 		}
-		.liebiao>ul>li>.black{
-			color:black;
+		.l{
+			margin-top: 22px;
+			margin-bottom: 34px;
 		}
-		.pic4{
-			margin:22px 0px 0px 34px;
-		}
-		.btbt{
+		.z{
 			height:164px;
 			font-size:10px;
 			color:#666560;
 		}
-		.btbt ul{
+		.z ul{
 			margin:0px 0px 18px 266px;
 		}
-		.btbt li{
+		.z li{
 			display:inline-block;
 			margin-top:14px;
 		}
-		.btbt span{
+		.z span{
 			margin:0px 12px 0px 12px;
 		}
-		.btbt p{
+		.z p{
 			margin-bottom:10px;
 		}
 		.p1{
 			margin-left:342px;
 		}
 		.p2{
-			margin-left:54px;
+			margin-left:150px;
 		}
 		.p3{
 			margin-left:526px;
@@ -276,28 +267,27 @@
 			margin-left:206px;
 		}
 		/*公告栏*/
-		.an02{
-			font-size:10px;
+		.lan{
+			font-size:11px;
 			height:310px;
-			position:relative;
 			overflow:hidden;
 		}
-		.an02 li{
-			margin:10px 0px 12px 14px;
+		.lan li{
+			margin-top: 10px;
 		}
-		.an02 ul{
+		.lan ul{
 			overflow:hidden;
 			float:left;
 			height:310px;
+			width: 150px;
 		}
 
 		/*右侧弹出*/
-		#alert{
+		#you{
 			width:180px;
 			position:fixed;
-			left:1250px;
+			left:1425px;
 			top:80px;
-			z-index:2;
 		}
 		.tan1{
 			width:124px;
@@ -345,12 +335,12 @@
 			margin-left:10px;
 			margin-top:40px;
 		}
-
-
 	</style>
 </head>
-<body style="width: 1180px;margin: 0 auto;overflow: auto;">
-	<div style="height: 35px;">
+<body style="overflow: auto;">
+	<div style="width: 1180px;margin: 0 auto;">
+		<div class="lu">
+			<div style="height: 35px;">
 		<p style="color: gray; margin-left: 60px; float: left; font-size: 10px" > 帮五买，享帮帮 </p>
 		<img style="margin-top: 6px; margin-left: 340px;width:19px;height:19px;background: url(img/common_min.png)0-31px;">
 		<img style="margin-left: 19px;width:19px;height:19px;background: url(img/common_min.png)0-53px;">
@@ -384,6 +374,7 @@
 		<p style="font-size: 11px;float: left;">防晒霜<img src="img/xian_03.png"style="margin-left: 10px;margin-right: 10px;"></p>
 		<p style="font-size: 11px;float: left;margin-top: 15px;">伞</p>
 	</div>
+		</div>	
 	<div class="e">全部商品分类</div>
 	<div class="f">帮5赚</div>
 	<div class="f">帮韩品</div>
@@ -432,23 +423,14 @@
 			<li>6</li>
 		</ul>
 	</div>
-	</div>
-
-	<div class="picture">
-		<img src="img/1(1).jpg"/>
-		<img src="img/2.jpg"/>
-		<img src="img/3(1).png"/>
-		<a href=""><img src="img/qqq.png"/></a>
-		</div>
-		</div>
-		<div class="right">
+	<div class="right">
 			<div class="announce">
-				<div class="an01">
+				<div class="an">
 					<img src="img/ico-notice.png" class="pic1"/>
 					<span>帮帮快讯</span>
 					<img src="img/jiantou.jpg" class="pic2"/>
 				</div>
-			<div class="an02">
+			<div class="lan">
 				<ul class="ul">
 					<li>[公告]帮购及VIP服务调整1</li>
 					<li>[公告]帮购及VIP服务调整2</li>
@@ -466,7 +448,7 @@
 				</ul>
 				<ul class="ul"></ul>
 			</div>
-		</div>
+		</div>	
 		<div>
 			<div class="recharge">
 				<div>
@@ -488,53 +470,60 @@
 			</div>	
 		</div>
 	</div>
-	<div class="bottom">
-		<div class="bttop">
-			<img src="img/loginB.jpg"/>
+	<div style="position: relative;top: -185px;">
+		<a class="ph"style="margin-right:150px;" href=""><img src="img/qqq.png"/></a>
+		<img class="ph"src="img/3(1).png"/>
+		<img class="ph"src="img/2.jpg"/>
+		<img class="ph"src="img/1(1).jpg"/>	
+	</div>
+	</div>	
+	<div class="bottom"style="position: relative;top: -185px;">
+		<div class="bt">
+			<img style="float: left;margin-left: 65px;" src="img/loginB.jpg"/>
 			<div class="liebiao">
 				<ul>
-					<li><a href="" class="black">购物指南</a></li>
+					<li><a href="" >购物指南</a></li>
 					<li><a href="">如何下单</a></li>
 					<li><a href="">帮5购流程</a></li>
 					<li><a href="">订单查询</a></li>
 					<li><a href="">物流配送</a></li>
 				</ul>
 				<ul>
-					<li><a href="" class="black">支付相关</a></li>
+					<li><a href="" >支付相关</a></li>
 					<li><a href="">支付方式</a></li>
 					<li><a href="">安全设置</a></li>
 					<li><a href="">账户信息</a></li>
 				</ul>
 				<ul>
-					<li><a href="" class="black">售后服务</a></li>
+					<li><a href="" >售后服务</a></li>
 					<li><a href="">取消订单</a></li>
 					<li><a href="">申请售后</a></li>
 					<li><a href="">退货流程</a></li>
 					<li><a href="">退货相关</a></li>
 				</ul>
 				<ul>
-					<li><a href="" class="black">VIP服务</a></li>
+					<li><a href="" >VIP服务</a></li>
 					<li><a href="">VIP优惠</a></li>
 					<li><a href="">如何成为VIP</a></li>
 					<li><a href="">超级帮钻</a></li>
 				</ul>
 				<ul>
-					<li><a href="" class="black">帮韩品</a></li>
+					<li><a href="" >帮韩品</a></li>
 					<li><a href="">韩国正品</a></li>
 					<li><a href="">闪电发货</a></li>
 					<li><a href="">帮韩品售后</a></li>
 				</ul>
 				<ul>
-					<li><a href="" class="black">更多</a></li>
+					<li><a href="" >更多</a></li>
 					<li><a href="">手机APP</a></li>
 					<li><a href="">帮5买采APP</a></li>
 					<li><a href="">帮5淘插件</a></li>
 					<li><a href="">其他</a></li>
 				</ul>
 			</div>
-			<img src="img/erweima.jpg" class="pic4"/>
+			<img style="float: right;" src="img/erweima.jpg" class="l"/>
 				</div>
-					<div class="btbt">
+					<div class="z">
 						<ul>
 							<li>关于帮5买</li><span> | </span>
 							<li>联系我们</li><span> | </span>
@@ -565,7 +554,7 @@
 			</div>
 		</div>		
 	</div>
-	<div id="alert">
+	<div id="you">
 		<div class="tan1 idtan">
 			<img src="img/consult-s.png" class="consult"/>
 			<img src="img/xiaobang.png" class="xiaobang"/>
@@ -585,6 +574,8 @@
 			<img src="img/cart.png"/>
 		</div>
 	</div>
+	</div>
+	</div>		
 
 	<script type="text/javascript">
 		var slider = document.getElementById('slider');
@@ -679,9 +670,82 @@
     	return getComputedStyle(obj)[style]
     	else
     		obj.currentStyle[style]
-    }	
-	</script>
-
-	
+    }
+    var ul = document.getElementsByClassName('ul');
+	var an=document.getElementsByClassName('lan')[0];
+	ul[1].innerHTML="<li>[公告]帮购及VIP服务调整12</li><li>[公告]帮购及VIP服务调整13</li>"+ul[0].innerHTML;
+	function ulNext(){
+		if(ul[1].offsetHeight-an.scrollTop<=0){
+			an.scrollTop-=ul[0].offsetHeight;
+		}else{
+			an.scrollTop++;
+		}
+	}
+	setInterval(ulNext,10);
+	// 充值
+	var select = document.getElementById('select');
+	var span = document.getElementsByClassName('span3')[1];
+	select.onchange=function(){
+		span.innerHTML=this.value;
+	}
+	//右侧弹出
+	var tan = document.getElementsByClassName('idtan');
+	var chu = document.getElementsByClassName('erwei')[0];
+	function over(obj,i){
+		obj.onmouseover=function(){
+			clearInterval(shijian);
+			if(!this.contains(event.fromElement)){
+				obj.style.marginLeft="45px";
+				if(i==2){
+					chu.src='img/erwei.png';
+					chu.style.width='75px';
+					chu.style.height='75px';
+					chu.style.marginTop='0px';
+				}
+				var shijian=setInterval(function(){
+					obj.style.marginLeft=parseInt(obj.style.marginLeft)-1+'px';
+					if(parseInt(obj.style.marginLeft)<1){
+						clearInterval(shijian);
+					}
+				},10);
+			}
+		}		
+		obj.onmouseout=function(){
+			clearInterval(shijian2);
+			if(!this.contains(event.toElement)){
+				if(parseInt(obj.style.marginLeft)!=50){
+					obj.style.marginLeft="1px";
+					if(i==2){
+						chu.src='img/serwei.png';
+						chu.style.width='24px';
+						chu.style.height='24px';
+						chu.style.marginTop='40px';
+					}
+					var shijian2=setInterval(function(){
+						obj.style.marginLeft=parseInt(obj.style.marginLeft)+1+'px';
+						if(parseInt(obj.style.marginLeft)>49){
+							clearInterval(shijian2);
+						}
+					},10);
+				}else{
+					obj.style.marginLeft="50px";
+				}
+			}
+			
+		}
+		
+	}
+	for(var i=0;i<tan.length;i++){
+		over(tan[i],i);
+	}
+	</script>	
 </body>
 </html>
+
+
+
+
+
+    
+
+	
